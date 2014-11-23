@@ -46,7 +46,7 @@ public class Stack {
 	}
 
 	public int pop () throws EmptyStackException {
-		if (size > 0) return arr[size - 1];
+		if (size > 0) return arr[--size];
 		else throw new EmptyStackException();
 	}
 
