@@ -8,12 +8,12 @@
 public class BinarySearch {
 
 	public static void main (String[] args) {
-		int[] values = new int[] {3, 6, 8, 12, 15, 23, 45, 67, 74, 86};
+		int[] values = new int[] {3, 6, 8, 12, 15, 23, 45, 67, 74, 86, 99};
 		int key = 67;
 		System.out.println("Index of " + key + " is " + findKeyFromSortedArray(key, values));
 
 		// Now lets find the smallest element of a rotated array
-		int[] rotatedValues = new int[] {86, 74, 67, 3, 6, 8, 12, 15, 23, 45};
+		int[] rotatedValues = new int[] {86, 74, 67, 3, 6, 8, 12, 15, 23, 45, 54};
 		System.out.println("Index of smallest element is " + findSmallestElementFromRotatedArray(rotatedValues));
 
 		// Lets find the index of any number from the above rotated array
