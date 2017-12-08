@@ -1,5 +1,3 @@
-package com.example.ds;
-
 import java.util.Arrays;
 import java.util.EmptyStackException;
 
@@ -29,6 +27,7 @@ public class Stack {
 	public static void main (String[] args) {
 		Stack s = new Stack();
 		s.push(10);
+		s.pop();
 		System.out.println(s.size());
 	}
 

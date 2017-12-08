@@ -1,12 +1,9 @@
-package com.example;
-
 /**
  * This class is demonstrating how to search a key from an array using binary search algorithm.
  * 
  * NOTE: The integer array should be an sorted array.
  * 
  * @author chansek
- *
  */
 public class BinarySearch {
 
