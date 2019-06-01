@@ -1,3 +1,5 @@
+package Search;
+
 /**
  * This class is demonstrating how to search a key from an array using binary search algorithm.
  * 

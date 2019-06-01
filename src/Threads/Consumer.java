@@ -1,3 +1,5 @@
+package Threads;
+
 /**
  * Consumer class to consume something produced by Producer class.
  */

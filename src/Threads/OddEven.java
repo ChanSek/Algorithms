@@ -1,3 +1,5 @@
+package Threads;
+
 public class OddEven {
 
     static int number = 0;
