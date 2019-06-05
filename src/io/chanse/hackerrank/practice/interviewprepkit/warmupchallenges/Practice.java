@@ -1,4 +1,4 @@
-package io.chanse.hackerrank;
+package io.chanse.hackerrank.practice.interviewprepkit.warmupchallenges;
 
 import java.util.ArrayList;
 import java.util.List;
