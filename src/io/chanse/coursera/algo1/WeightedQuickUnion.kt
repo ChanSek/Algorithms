@@ -2,19 +2,27 @@ package io.chanse.coursera.algo1
 
 import java.util.*
 
-class QuickUnion(private val arr: IntArray) {
+class WeightedQuickUnion(private val arr: IntArray) {
+
+    var height = 0
 
     fun connect(p: Int, q: Int) {
-        val root = root(p)
-        arr[root] = root(q)
+        val rootOfP = root(p)
+        val heightOfP = height
+        val rootOfQ = root(q)
+        val heightOfQ = height
+        if (heightOfP <= heightOfQ) arr[rootOfP] = rootOfQ
+        else arr[rootOfQ] = rootOfP
     }
 
     fun isConnected(p: Int, q: Int) = root(p) == root(q)
 
-    private fun root(p: Int): Int {
-        var index = p
-        while (arr[index] != index) {
-            index = arr[index]
+    private fun root(i: Int): Int {
+        var index = i
+        height = 0
+        while (index != arr[i]) {
+            index = arr[i]
+            height++
         }
         return index
     }
@@ -23,7 +31,7 @@ class QuickUnion(private val arr: IntArray) {
 fun main() {
     val input = IntArray(10) { it }
 
-    val qu = QuickUnion(input)
+    val qu = WeightedQuickUnion(input)
     qu.connect(1, 2)
     input.forEach {
         print(qu.isConnected(1, it).toString() + " ")
